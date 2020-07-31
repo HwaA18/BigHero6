@@ -17,18 +17,21 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/BigHeroSix",
+            "outputPath": "docs",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "src/assets/favicon.png",
+              "src/assets",
+              "./src/assets/video4.mp4"
+
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/font-files/fonts-name.scss"
             ],
             "scripts": []
           },
@@ -88,8 +91,9 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "src/assets/favicon.png",
+              "src/assets",
+              "src/assets/font-files/fonts-name.scss"
             ],
             "styles": [
               "src/styles.scss"
@@ -123,6 +127,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "BigHeroSix"
+    }
+  },
+  "defaultProject": "BigHeroSix",
+  "cli": {
+    "analytics": "3910cd38-f577-4040-a1ac-3219d0a7e9ce"
+  }
 }
